@@ -14,6 +14,35 @@
 		966B21C01B560F7D002498DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966B21BF1B560F7D002498DA /* Images.xcassets */; };
 		966B21C31B560F7D002498DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966B21C11B560F7D002498DA /* LaunchScreen.xib */; };
 		966B21CF1B560F7E002498DA /* DayView_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21CE1B560F7E002498DA /* DayView_SampleTests.m */; };
+		966B21DA1B560F99002498DA /* NSDate+CupertinoYankee.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21D91B560F99002498DA /* NSDate+CupertinoYankee.m */; };
+		966B21DD1B560FD2002498DA /* MSCollectionViewCalendarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21DC1B560FD2002498DA /* MSCollectionViewCalendarLayout.m */; };
+		966B21EB1B561007002498DA /* MSTimeRowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21DE1B561007002498DA /* MSTimeRowHeader.m */; };
+		966B21EC1B561007002498DA /* MSDayColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21E01B561007002498DA /* MSDayColumnHeader.m */; };
+		966B21ED1B561007002498DA /* MSTimeRowHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21E21B561007002498DA /* MSTimeRowHeaderBackground.m */; };
+		966B21EE1B561007002498DA /* MSDayColumnHeaderBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21E41B561007002498DA /* MSDayColumnHeaderBackground.m */; };
+		966B21EF1B561007002498DA /* MSGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21E61B561007002498DA /* MSGridline.m */; };
+		966B21F01B561007002498DA /* MSCurrentTimeGridline.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21E81B561007002498DA /* MSCurrentTimeGridline.m */; };
+		966B21F11B561007002498DA /* MSCurrentTimeIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21EA1B561007002498DA /* MSCurrentTimeIndicator.m */; };
+		966B21F51B56103D002498DA /* MSEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21F41B56103D002498DA /* MSEventCell.m */; };
+		966B21F81B561048002498DA /* MSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21F71B561048002498DA /* MSEvent.m */; };
+		966B21FB1B5610BF002498DA /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21FA1B5610BF002498DA /* UIColor+HexString.m */; };
+		966B22121B56178E002498DA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21FD1B56178E002498DA /* MASCompositeConstraint.m */; };
+		966B22131B56178E002498DA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B21FF1B56178E002498DA /* MASConstraint.m */; };
+		966B22141B56178E002498DA /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22011B56178E002498DA /* MASConstraintMaker.m */; };
+		966B22151B56178E002498DA /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22031B56178E002498DA /* MASLayoutConstraint.m */; };
+		966B22161B56178E002498DA /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22071B56178E002498DA /* MASViewAttribute.m */; };
+		966B22171B56178E002498DA /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22091B56178E002498DA /* MASViewConstraint.m */; };
+		966B22181B56178E002498DA /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B220B1B56178E002498DA /* NSArray+MASAdditions.m */; };
+		966B22191B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B220E1B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		966B221D1B561999002498DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B221C1B561999002498DA /* QuartzCore.framework */; };
+		966B221F1B56199E002498DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B221E1B56199E002498DA /* UIKit.framework */; };
+		966B22211B5619A6002498DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B22201B5619A6002498DA /* Foundation.framework */; };
+		966B22231B5619AC002498DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B22221B5619AC002498DA /* CoreGraphics.framework */; };
+		966B22251B5619B6002498DA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B22241B5619B6002498DA /* MobileCoreServices.framework */; };
+		966B22271B5619C3002498DA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B22261B5619C3002498DA /* SystemConfiguration.framework */; };
+		966B222A1B561C77002498DA /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22291B561C77002498DA /* View+MASAdditions.m */; };
+		96EEE96E1B566AE2000DD81F /* event1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EEE96C1B566AE2000DD81F /* event1.jpg */; };
+		96EEE96F1B566AE2000DD81F /* event2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EEE96D1B566AE2000DD81F /* event2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +69,62 @@
 		966B21C81B560F7E002498DA /* DayView SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DayView SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B21CD1B560F7E002498DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966B21CE1B560F7E002498DA /* DayView_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayView_SampleTests.m; sourceTree = "<group>"; };
+		966B21D81B560F99002498DA /* NSDate+CupertinoYankee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CupertinoYankee.h"; sourceTree = "<group>"; };
+		966B21D91B560F99002498DA /* NSDate+CupertinoYankee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CupertinoYankee.m"; sourceTree = "<group>"; };
+		966B21DB1B560FD2002498DA /* MSCollectionViewCalendarLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCollectionViewCalendarLayout.h; sourceTree = "<group>"; };
+		966B21DC1B560FD2002498DA /* MSCollectionViewCalendarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCollectionViewCalendarLayout.m; sourceTree = "<group>"; };
+		966B21DE1B561007002498DA /* MSTimeRowHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeader.m; sourceTree = "<group>"; };
+		966B21DF1B561007002498DA /* MSDayColumnHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDayColumnHeader.h; sourceTree = "<group>"; };
+		966B21E01B561007002498DA /* MSDayColumnHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDayColumnHeader.m; sourceTree = "<group>"; };
+		966B21E11B561007002498DA /* MSTimeRowHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeaderBackground.h; sourceTree = "<group>"; };
+		966B21E21B561007002498DA /* MSTimeRowHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTimeRowHeaderBackground.m; sourceTree = "<group>"; };
+		966B21E31B561007002498DA /* MSDayColumnHeaderBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDayColumnHeaderBackground.h; sourceTree = "<group>"; };
+		966B21E41B561007002498DA /* MSDayColumnHeaderBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDayColumnHeaderBackground.m; sourceTree = "<group>"; };
+		966B21E51B561007002498DA /* MSGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGridline.h; sourceTree = "<group>"; };
+		966B21E61B561007002498DA /* MSGridline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGridline.m; sourceTree = "<group>"; };
+		966B21E71B561007002498DA /* MSCurrentTimeGridline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeGridline.h; sourceTree = "<group>"; };
+		966B21E81B561007002498DA /* MSCurrentTimeGridline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCurrentTimeGridline.m; sourceTree = "<group>"; };
+		966B21E91B561007002498DA /* MSCurrentTimeIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCurrentTimeIndicator.h; sourceTree = "<group>"; };
+		966B21EA1B561007002498DA /* MSCurrentTimeIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCurrentTimeIndicator.m; sourceTree = "<group>"; };
+		966B21F21B561011002498DA /* MSTimeRowHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTimeRowHeader.h; sourceTree = "<group>"; };
+		966B21F31B56103D002498DA /* MSEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEventCell.h; sourceTree = "<group>"; };
+		966B21F41B56103D002498DA /* MSEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEventCell.m; sourceTree = "<group>"; };
+		966B21F61B561048002498DA /* MSEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEvent.h; sourceTree = "<group>"; };
+		966B21F71B561048002498DA /* MSEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEvent.m; sourceTree = "<group>"; };
+		966B21F91B5610BF002498DA /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		966B21FA1B5610BF002498DA /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		966B21FC1B56178E002498DA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		966B21FD1B56178E002498DA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		966B21FE1B56178E002498DA /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		966B21FF1B56178E002498DA /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		966B22001B56178E002498DA /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		966B22011B56178E002498DA /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		966B22021B56178E002498DA /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		966B22031B56178E002498DA /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		966B22041B56178E002498DA /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		966B22051B56178E002498DA /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		966B22061B56178E002498DA /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		966B22071B56178E002498DA /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		966B22081B56178E002498DA /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		966B22091B56178E002498DA /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		966B220A1B56178E002498DA /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		966B220B1B56178E002498DA /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		966B220C1B56178E002498DA /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		966B220D1B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		966B220E1B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		966B22111B56178E002498DA /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		966B221B1B5617A4002498DA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		966B221C1B561999002498DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		966B221E1B56199E002498DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		966B22201B5619A6002498DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		966B22221B5619AC002498DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		966B22241B5619B6002498DA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		966B22261B5619C3002498DA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		966B22281B561C77002498DA /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		966B22291B561C77002498DA /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		966B222B1B561E91002498DA /* UIView+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		96EEE96C1B566AE2000DD81F /* event1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event1.jpg; sourceTree = "<group>"; };
+		96EEE96D1B566AE2000DD81F /* event2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +132,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966B22271B5619C3002498DA /* SystemConfiguration.framework in Frameworks */,
+				966B22251B5619B6002498DA /* MobileCoreServices.framework in Frameworks */,
+				966B22231B5619AC002498DA /* CoreGraphics.framework in Frameworks */,
+				966B22211B5619A6002498DA /* Foundation.framework in Frameworks */,
+				966B221F1B56199E002498DA /* UIKit.framework in Frameworks */,
+				966B221D1B561999002498DA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +154,12 @@
 		966B21A61B560F7D002498DA = {
 			isa = PBXGroup;
 			children = (
+				966B22261B5619C3002498DA /* SystemConfiguration.framework */,
+				966B22241B5619B6002498DA /* MobileCoreServices.framework */,
+				966B22221B5619AC002498DA /* CoreGraphics.framework */,
+				966B22201B5619A6002498DA /* Foundation.framework */,
+				966B221E1B56199E002498DA /* UIKit.framework */,
+				966B221C1B561999002498DA /* QuartzCore.framework */,
 				966B21B11B560F7D002498DA /* DayView Sample */,
 				966B21CB1B560F7E002498DA /* DayView SampleTests */,
 				966B21B01B560F7D002498DA /* Products */,
@@ -85,6 +182,12 @@
 				966B21B71B560F7D002498DA /* AppDelegate.m */,
 				966B21B91B560F7D002498DA /* ViewController.h */,
 				966B21BA1B560F7D002498DA /* ViewController.m */,
+				96EEE96B1B563B69000DD81F /* Event */,
+				966B221B1B5617A4002498DA /* PrefixHeader.pch */,
+				96EEE96A1B563B58000DD81F /* Layout */,
+				96EEE9691B563B45000DD81F /* Decoration VIew */,
+				96EEE9681B563B3A000DD81F /* UIColor */,
+				96EEE9671B563B31000DD81F /* Masonry */,
 				966B21BC1B560F7D002498DA /* Main.storyboard */,
 				966B21BF1B560F7D002498DA /* Images.xcassets */,
 				966B21C11B560F7D002498DA /* LaunchScreen.xib */,
@@ -96,6 +199,8 @@
 		966B21B21B560F7D002498DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96EEE96C1B566AE2000DD81F /* event1.jpg */,
+				96EEE96D1B566AE2000DD81F /* event2.jpg */,
 				966B21B31B560F7D002498DA /* Info.plist */,
 				966B21B41B560F7D002498DA /* main.m */,
 			);
@@ -117,6 +222,88 @@
 				966B21CD1B560F7E002498DA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96EEE9671B563B31000DD81F /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				966B21FC1B56178E002498DA /* MASCompositeConstraint.h */,
+				966B21FD1B56178E002498DA /* MASCompositeConstraint.m */,
+				966B21FE1B56178E002498DA /* MASConstraint.h */,
+				966B21FF1B56178E002498DA /* MASConstraint.m */,
+				966B22001B56178E002498DA /* MASConstraintMaker.h */,
+				966B22011B56178E002498DA /* MASConstraintMaker.m */,
+				966B22021B56178E002498DA /* MASLayoutConstraint.h */,
+				966B22031B56178E002498DA /* MASLayoutConstraint.m */,
+				966B22041B56178E002498DA /* Masonry.h */,
+				966B22051B56178E002498DA /* MASUtilities.h */,
+				966B22061B56178E002498DA /* MASViewAttribute.h */,
+				966B22071B56178E002498DA /* MASViewAttribute.m */,
+				966B22081B56178E002498DA /* MASViewConstraint.h */,
+				966B22091B56178E002498DA /* MASViewConstraint.m */,
+				966B220A1B56178E002498DA /* NSArray+MASAdditions.h */,
+				966B220B1B56178E002498DA /* NSArray+MASAdditions.m */,
+				966B220C1B56178E002498DA /* NSArray+MASShorthandAdditions.h */,
+				966B220D1B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.h */,
+				966B220E1B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.m */,
+				966B22281B561C77002498DA /* View+MASAdditions.h */,
+				966B22291B561C77002498DA /* View+MASAdditions.m */,
+				966B22111B56178E002498DA /* View+MASShorthandAdditions.h */,
+				966B222B1B561E91002498DA /* UIView+MASShorthandAdditions.h */,
+			);
+			name = Masonry;
+			sourceTree = "<group>";
+		};
+		96EEE9681B563B3A000DD81F /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				966B21F91B5610BF002498DA /* UIColor+HexString.h */,
+				966B21FA1B5610BF002498DA /* UIColor+HexString.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		96EEE9691B563B45000DD81F /* Decoration VIew */ = {
+			isa = PBXGroup;
+			children = (
+				966B21F21B561011002498DA /* MSTimeRowHeader.h */,
+				966B21DE1B561007002498DA /* MSTimeRowHeader.m */,
+				966B21DF1B561007002498DA /* MSDayColumnHeader.h */,
+				966B21E01B561007002498DA /* MSDayColumnHeader.m */,
+				966B21E11B561007002498DA /* MSTimeRowHeaderBackground.h */,
+				966B21E21B561007002498DA /* MSTimeRowHeaderBackground.m */,
+				966B21E31B561007002498DA /* MSDayColumnHeaderBackground.h */,
+				966B21E41B561007002498DA /* MSDayColumnHeaderBackground.m */,
+				966B21E51B561007002498DA /* MSGridline.h */,
+				966B21E61B561007002498DA /* MSGridline.m */,
+				966B21E71B561007002498DA /* MSCurrentTimeGridline.h */,
+				966B21E81B561007002498DA /* MSCurrentTimeGridline.m */,
+				966B21E91B561007002498DA /* MSCurrentTimeIndicator.h */,
+				966B21EA1B561007002498DA /* MSCurrentTimeIndicator.m */,
+			);
+			name = "Decoration VIew";
+			sourceTree = "<group>";
+		};
+		96EEE96A1B563B58000DD81F /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				966B21DB1B560FD2002498DA /* MSCollectionViewCalendarLayout.h */,
+				966B21DC1B560FD2002498DA /* MSCollectionViewCalendarLayout.m */,
+				966B21D81B560F99002498DA /* NSDate+CupertinoYankee.h */,
+				966B21D91B560F99002498DA /* NSDate+CupertinoYankee.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		96EEE96B1B563B69000DD81F /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				966B21F61B561048002498DA /* MSEvent.h */,
+				966B21F71B561048002498DA /* MSEvent.m */,
+				966B21F31B56103D002498DA /* MSEventCell.h */,
+				966B21F41B56103D002498DA /* MSEventCell.m */,
+			);
+			name = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +386,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96EEE96F1B566AE2000DD81F /* event2.jpg in Resources */,
+				96EEE96E1B566AE2000DD81F /* event1.jpg in Resources */,
 				966B21BE1B560F7D002498DA /* Main.storyboard in Resources */,
 				966B21C31B560F7D002498DA /* LaunchScreen.xib in Resources */,
 				966B21C01B560F7D002498DA /* Images.xcassets in Resources */,
@@ -219,9 +408,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966B21FB1B5610BF002498DA /* UIColor+HexString.m in Sources */,
+				966B21EB1B561007002498DA /* MSTimeRowHeader.m in Sources */,
+				966B21DD1B560FD2002498DA /* MSCollectionViewCalendarLayout.m in Sources */,
 				966B21BB1B560F7D002498DA /* ViewController.m in Sources */,
 				966B21B81B560F7D002498DA /* AppDelegate.m in Sources */,
+				966B22161B56178E002498DA /* MASViewAttribute.m in Sources */,
+				966B22151B56178E002498DA /* MASLayoutConstraint.m in Sources */,
+				966B22191B56178E002498DA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				966B22141B56178E002498DA /* MASConstraintMaker.m in Sources */,
 				966B21B51B560F7D002498DA /* main.m in Sources */,
+				966B21F51B56103D002498DA /* MSEventCell.m in Sources */,
+				966B21EC1B561007002498DA /* MSDayColumnHeader.m in Sources */,
+				966B21ED1B561007002498DA /* MSTimeRowHeaderBackground.m in Sources */,
+				966B21F81B561048002498DA /* MSEvent.m in Sources */,
+				966B21F01B561007002498DA /* MSCurrentTimeGridline.m in Sources */,
+				966B21EF1B561007002498DA /* MSGridline.m in Sources */,
+				966B22121B56178E002498DA /* MASCompositeConstraint.m in Sources */,
+				966B22181B56178E002498DA /* NSArray+MASAdditions.m in Sources */,
+				966B21DA1B560F99002498DA /* NSDate+CupertinoYankee.m in Sources */,
+				966B21F11B561007002498DA /* MSCurrentTimeIndicator.m in Sources */,
+				966B222A1B561C77002498DA /* View+MASAdditions.m in Sources */,
+				966B22171B56178E002498DA /* MASViewConstraint.m in Sources */,
+				966B22131B56178E002498DA /* MASConstraint.m in Sources */,
+				966B21EE1B561007002498DA /* MSDayColumnHeaderBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +559,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/DayView Sample/PrefixHeader.pch";
 				INFOPLIST_FILE = "DayView Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +572,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/DayView Sample/PrefixHeader.pch";
 				INFOPLIST_FILE = "DayView Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +634,7 @@
 				966B21D41B560F7E002498DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966B21D51B560F7E002498DA /* Build configuration list for PBXNativeTarget "DayView SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +643,7 @@
 				966B21D71B560F7E002498DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
