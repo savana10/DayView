@@ -35,17 +35,31 @@ NSMutableArray *events;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     events=[NSMutableArray new];
-    for (int i=0;i<15;i++) {
-        MSEvent *event =[MSEvent new];
-        event.title = [NSString stringWithFormat:@"This is test event no %i",i];
-        event.location =@"Santa Cruz Mumbai";
+    for (int i=0;i<2;i++) {
         NSDate *eventStartDate =[NSDate dateWithTimeInterval:i*24*60*60 sinceDate:[NSDate date]];
-        NSDate *eventNextDate =[NSDate dateWithTimeInterval:(i+1)*24*60*60 sinceDate:[NSDate date]];
-        int r = arc4random_uniform(i);
-        event.start=[NSDate dateWithTimeInterval:r*60*60 sinceDate:eventStartDate];
-        event.end =[NSDate dateWithTimeInterval:(1+r)*60*60 sinceDate:eventStartDate];
-        event.eventId= [NSNumber numberWithInt:i];
-        [events addObject:event];
+        NSMutableArray *dayEvents =[NSMutableArray new];
+        for (int j=0;j<3;j++) {
+            MSEvent *event =[MSEvent new];
+            event.title = [NSString stringWithFormat:@"This is test event no %i",i];
+            event.location =@"Santa Cruz Mumbai";
+            int r = arc4random_uniform(10);
+            if (j%3 == 0) {
+                event.start=[NSDate dateWithTimeInterval:(i+r)*60*60 sinceDate:eventStartDate];
+                event.end =[NSDate dateWithTimeInterval:(3+j+r)*60*60 sinceDate:eventStartDate];
+            }else if (j%3 == 1){
+                event.start=[NSDate dateWithTimeInterval:(j+i-r)*0.5*60*60 sinceDate:eventStartDate];
+                event.end =[NSDate dateWithTimeInterval:(3+j+i-r)*0.5*60*60 sinceDate:eventStartDate];
+            }else{
+                event.start=[NSDate dateWithTimeInterval:4.5*60*60 sinceDate:eventStartDate];
+                event.end =[NSDate dateWithTimeInterval:5.5*60*60 sinceDate:eventStartDate];
+            }
+            
+            event.eventId= [NSNumber numberWithInt:i];
+            
+            [dayEvents addObject:event];
+        }
+        
+        [events addObject:dayEvents];
     }
     
     [self.eventsCollectionView registerClass:MSEventCell.class forCellWithReuseIdentifier:MSEventCellReuseIdentifier];
@@ -82,12 +96,14 @@ NSMutableArray *events;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 1;
+    NSMutableArray *eventsInDay =[events objectAtIndex:section];
+    return eventsInDay.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MSEventCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:MSEventCellReuseIdentifier forIndexPath:indexPath];
-    [cell setEvent:[events objectAtIndex:indexPath.section]];
+    NSArray *daysEvent =[events objectAtIndex:indexPath.section];
+    [cell setEvent:[daysEvent objectAtIndex:indexPath.section]];
     [cell setEventDelegate:self];
     return cell;
     
@@ -126,19 +142,24 @@ NSMutableArray *events;
 
 - (NSDate *)collectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout dayForSection:(NSInteger)section
 {
-    MSEvent *e =[events objectAtIndex:section];
+    NSArray *daysEvent =[events objectAtIndex:section];
+//    [cell setEvent:[daysEvent objectAtIndex:indexPath.section]];
+    MSEvent *e =[daysEvent firstObject];
     return e.start;
 }
 - (NSDate *)collectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout startTimeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MSEvent *e =[events objectAtIndex:indexPath.section];
+    NSArray *daysEvent =[events objectAtIndex:indexPath.section];
+    MSEvent *e =[daysEvent objectAtIndex:indexPath.row];
 //    NSLog(@"start date %@",e.start );
     return e.start;
 }
 - (NSDate *)collectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout endTimeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MSEvent *e =[events objectAtIndex:indexPath.section];
+//    MSEvent *e =[events objectAtIndex:indexPath.section];
 //    NSLog(@"start date %@",e.end);
+    NSArray *daysEvent =[events objectAtIndex:indexPath.section];
+    MSEvent *e =[daysEvent objectAtIndex:indexPath.row];
     return e.end;
 }
 - (NSDate *)currentTimeComponentsForCollectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout
