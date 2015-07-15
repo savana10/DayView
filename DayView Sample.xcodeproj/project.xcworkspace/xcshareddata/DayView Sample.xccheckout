@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7D32227E-B051-4E05-BAA5-334B78D44513</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE8D15E29932E5D0A22CCE1043D177A61EE92305</key>
+		<string>https://github.com/savana10/DayView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DayView Sample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE8D15E29932E5D0A22CCE1043D177A61EE92305</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/savana10/DayView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE8D15E29932E5D0A22CCE1043D177A61EE92305</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE8D15E29932E5D0A22CCE1043D177A61EE92305</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DayView%20Sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

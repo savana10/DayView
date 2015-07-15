@@ -56,20 +56,10 @@ UIPanGestureRecognizer *panGesutre;
         [self.contentView addSubview:self.location];
         [self.location setTextColor:[UIColor whiteColor]];
         self.imageView =[UIImageView new];
-        UIImage *image=[UIImage imageNamed:@"event1.jpg"];
+        UIImage *image=[UIImage imageNamed:@"event3.jpg"];
+//        [self.imageView setBackgroundColor:[UIColor lightGrayColor]];
         [self.imageView setImage:image];
         [self insertSubview:self.imageView atIndex:0];
-        //        [self.imageView makeConstraints:^(MASConstraintMaker *make) {
-        //            make.height.equalTo(self.height);
-        //            make.width.equalTo(self.width);
-        //            make.left.equalTo(self.left);
-        //            make.top.equalTo(self.top);
-        //        }];
-        //
-        //        [self.contentView addSubview:self.imageView];
-        
-        
-        //        [self updateColors];
         
         CGFloat borderWidth = 2.0;
         CGFloat contentMargin = 2.0;
@@ -99,12 +89,7 @@ UIPanGestureRecognizer *panGesutre;
         [self.imageView makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.contentView);
         }];
-        
-        //        panGesutre =[[UIPanGestureRecognizer alloc]  initWithTarget:self action:@selector(handlePan:)];
-        //        [panGesutre setDelaysTouchesBegan:false];
-        //        [panGesutre setDelaysTouchesEnded:false];
-        //        [panGesutre setDelegate:self];
-        //        [self addGestureRecognizer:panGesutre];
+
         _updateFrames =[NSNumber numberWithInt:0];
         
     }
@@ -222,6 +207,10 @@ UIPanGestureRecognizer *panGesutre;
     //    self.title.attributedText = [[NSAttributedString alloc] initWithString:event.title attributes:[self titleAttributesHighlighted:self.selected]];
     //    self.location.attributedText = [[NSAttributedString alloc] initWithString:event.location attributes:[self subtitleAttributesHighlighted:self.selected]];;
     self.tag = event.eventId.integerValue;
+    if (event.eventImage != nil) {
+    [self.imageView setImage:event.eventImage];    
+    }
+    
 }
 
 - (void)updateColors

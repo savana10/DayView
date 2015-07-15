@@ -40,7 +40,7 @@ NSMutableArray *events;
         NSMutableArray *dayEvents =[NSMutableArray new];
         for (int j=0;j<3;j++) {
             MSEvent *event =[MSEvent new];
-            event.title = [NSString stringWithFormat:@"This is test event no %i",i];
+            event.title = [NSString stringWithFormat:@"This is test event no %i",j];
             event.location =@"Santa Cruz Mumbai";
             int r = arc4random_uniform(10);
             if (j%3 == 0) {
@@ -55,7 +55,8 @@ NSMutableArray *events;
             }
             
             event.eventId= [NSNumber numberWithInt:i];
-            
+            int k=j; ++k;
+            event.eventImage =[UIImage imageNamed:[NSString stringWithFormat:@"event%i.jpg",k]];
             [dayEvents addObject:event];
         }
         
@@ -103,7 +104,7 @@ NSMutableArray *events;
 {
     MSEventCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:MSEventCellReuseIdentifier forIndexPath:indexPath];
     NSArray *daysEvent =[events objectAtIndex:indexPath.section];
-    [cell setEvent:[daysEvent objectAtIndex:indexPath.section]];
+    [cell setEvent:[daysEvent objectAtIndex:indexPath.row]];
     [cell setEventDelegate:self];
     return cell;
     

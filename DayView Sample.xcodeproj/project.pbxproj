@@ -43,6 +43,7 @@
 		966B222A1B561C77002498DA /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 966B22291B561C77002498DA /* View+MASAdditions.m */; };
 		96EEE96E1B566AE2000DD81F /* event1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EEE96C1B566AE2000DD81F /* event1.jpg */; };
 		96EEE96F1B566AE2000DD81F /* event2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EEE96D1B566AE2000DD81F /* event2.jpg */; };
+		96EEE9711B567B17000DD81F /* event3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EEE9701B567B17000DD81F /* event3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		966B222B1B561E91002498DA /* UIView+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		96EEE96C1B566AE2000DD81F /* event1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event1.jpg; sourceTree = "<group>"; };
 		96EEE96D1B566AE2000DD81F /* event2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event2.jpg; sourceTree = "<group>"; };
+		96EEE9701B567B17000DD81F /* event3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = event3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				96EEE96C1B566AE2000DD81F /* event1.jpg */,
 				96EEE96D1B566AE2000DD81F /* event2.jpg */,
+				96EEE9701B567B17000DD81F /* event3.jpg */,
 				966B21B31B560F7D002498DA /* Info.plist */,
 				966B21B41B560F7D002498DA /* main.m */,
 			);
@@ -388,6 +391,7 @@
 			files = (
 				96EEE96F1B566AE2000DD81F /* event2.jpg in Resources */,
 				96EEE96E1B566AE2000DD81F /* event1.jpg in Resources */,
+				96EEE9711B567B17000DD81F /* event3.jpg in Resources */,
 				966B21BE1B560F7D002498DA /* Main.storyboard in Resources */,
 				966B21C31B560F7D002498DA /* LaunchScreen.xib in Resources */,
 				966B21C01B560F7D002498DA /* Images.xcassets in Resources */,
