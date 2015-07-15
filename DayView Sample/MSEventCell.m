@@ -39,26 +39,26 @@ UIPanGestureRecognizer *panGesutre;
         self.layer.shadowOpacity = 0.0;
         
         self.borderView = [UIView new];
-        //        self.borderView.frame= self.frame;
         [self.contentView addSubview:self.borderView];
         
         self.title = [UILabel new];
-        //        [self.title setFrame:CGRectMake(0, 0, self.frame.size.width, 20)];
         self.title.numberOfLines = 0;
         self.title.backgroundColor = [UIColor clearColor];
         [self.title setTextColor:[UIColor whiteColor]];
         [self.contentView addSubview:self.title];
         
         self.location = [UILabel new];
-        //        [self.location setFrame:CGRectMake(0, 30, self.frame.size.width, 120)];
         self.location.numberOfLines = 0;
         self.location.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:self.location];
         [self.location setTextColor:[UIColor whiteColor]];
+        
         self.imageView =[UIImageView new];
         UIImage *image=[UIImage imageNamed:@"event3.jpg"];
-//        [self.imageView setBackgroundColor:[UIColor lightGrayColor]];
+        [self.imageView setContentMode:UIViewContentModeScaleAspectFill];
+        [self.imageView setClipsToBounds:true];
         [self.imageView setImage:image];
+        
         [self insertSubview:self.imageView atIndex:0];
         
         CGFloat borderWidth = 2.0;
@@ -206,6 +206,9 @@ UIPanGestureRecognizer *panGesutre;
     self.location.text = event.location;
     //    self.title.attributedText = [[NSAttributedString alloc] initWithString:event.title attributes:[self titleAttributesHighlighted:self.selected]];
     //    self.location.attributedText = [[NSAttributedString alloc] initWithString:event.location attributes:[self subtitleAttributesHighlighted:self.selected]];;
+    CGRect cellFrame =self.imageView.frame;
+    cellFrame.size= self.frame.size;
+    self.imageView.frame=cellFrame;
     self.tag = event.eventId.integerValue;
     if (event.eventImage != nil) {
     [self.imageView setImage:event.eventImage];    

@@ -90,9 +90,14 @@ NSMutableArray *events;
     [self.collectionViewCalendarLayout scrollCollectionViewToClosetSectionToCurrentTimeAnimated:NO];
 
 }
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDelegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-//    return 1;
     return events.count;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -109,14 +114,7 @@ NSMutableArray *events;
     return cell;
     
 }
-- (void)updateOfEvent:(MSEvent *)eventDetails At:(int)row
-{
-    
-    [events replaceObjectAtIndex:row withObject:eventDetails];
-    [self.collectionViewCalendarLayout invalidateLayoutCache];
-    [self.eventsCollectionView reloadData];
-    
-}
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionReusableView *view=[[UICollectionReusableView alloc] initWithFrame:CGRectZero];
@@ -136,15 +134,21 @@ NSMutableArray *events;
     return view;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - MSEventCellDelegate
+- (void)updateOfEvent:(MSEvent *)eventDetails At:(int)row
+{
+    
+//    [events replaceObjectAtIndex:row withObject:eventDetails];
+    [self.collectionViewCalendarLayout invalidateLayoutCache];
+    [self.eventsCollectionView reloadData];
+    
 }
+
+#pragma  mark - MSCollectionViewDelegateCalendarLayout
 
 - (NSDate *)collectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout dayForSection:(NSInteger)section
 {
     NSArray *daysEvent =[events objectAtIndex:section];
-//    [cell setEvent:[daysEvent objectAtIndex:indexPath.section]];
     MSEvent *e =[daysEvent firstObject];
     return e.start;
 }
@@ -152,13 +156,10 @@ NSMutableArray *events;
 {
     NSArray *daysEvent =[events objectAtIndex:indexPath.section];
     MSEvent *e =[daysEvent objectAtIndex:indexPath.row];
-//    NSLog(@"start date %@",e.start );
     return e.start;
 }
 - (NSDate *)collectionView:(UICollectionView *)collectionView layout:(MSCollectionViewCalendarLayout *)collectionViewLayout endTimeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    MSEvent *e =[events objectAtIndex:indexPath.section];
-//    NSLog(@"start date %@",e.end);
     NSArray *daysEvent =[events objectAtIndex:indexPath.section];
     MSEvent *e =[daysEvent objectAtIndex:indexPath.row];
     return e.end;
